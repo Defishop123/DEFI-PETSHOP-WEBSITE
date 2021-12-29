@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DEFI PET SHOP</title>
+	<link rel="icon"  href="img/pet.png"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+*before:,
+*after{
+* ,
+  	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	transition: .2s linear;
+	font-family: 'Poppins',san-serif;
+}
+body { 
+	background: url("img/bg.jpg");
+
+ }
+
+.img img { 
+	width: 10%;
+	position: absolute;
+	top:-2%;
+	left:1%;
+}
+.nav { 
+	position: absolute;
+	margin: 10px 950px;
+	height: 50vh;
+	width: 27vw;
+	display: flex;
+	align-content:right;
+	justify-content: space-around;
+}
+.nav a { 
+  position: relative;
+  color: #fff;
+  text-decoration:none;
+  font-family:'Poppins',sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.2px;;
+}
+.nav a:after {
+	content: "";
+	position: absolute;
+	background-color: #000;
+	height: 3px;
+	width: 0;
+	left:0;
+	bottom:310px;
+	transition: 0.4s;
+}
+.nav a:hover {
+	color: #000;
+}
+.nav a:hover:after{
+	width: 100%;
+}
+.header { 
+  height: 25vh;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.header h1{
+  font-size: 6vw;
+  font-family:kristen ITC;
+  
+}
+
+.main { 
+	padding: 10px;
+	text-align: center;
+	color: white;
+	
+}
+.main h2 { 
+	font-size: 60px;
+	font-weight: 800;
+	text-align:center;
+}
+.section { 
+			margin: 10px , auto;
+			padding: 0 10%;
+			padding-bottom: 10px;
+			text-transform: capitalize;
+	 }
+h2 { 
+	color:#fff;
+	font-size: 45px;
+	text-align: center;
+	padding-bottom: 15px;
+ } 
+ .container { 
+ 	display: grid;
+ 	gap: 30px;
+ 	grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+  }
+.box { 
+		padding:10px;
+		text-align: center;border-radius: 5px;
+		background: #fff;
+		box-shadow: 0px 5px 10px ;
+	 }
+.box img { 
+	height: 200px;
+ }
+ .box h3 { 
+ 	color:#000;
+ 	padding: 10px 0;
+ 	font-size: 20px;
+ 	font-family: 'Poppins', san-serif;
+  }
+ .box p { 
+ 	color: #000;
+ 	font-size: 14px;
+ 	line-height: 0.5;
+ 	text-align:left;
+  }
+ .btn { 
+ 	color:#fff;
+ 	border:none;
+ 	outline: none;
+ 	font-size: 17px;
+ 	margin-top: 10px;
+ 	padding: 8px 15px;
+ 	background: #17D7A0;
+ 	border-radius: 5px;
+ 	display: inline-block;
+ 	text-decoration: none;
+  }
+ .btn:hover{
+ 	letter-spacing: 1px;
+ }
+ .box:hover { 
+ 	transition: scale(1.03);
+ 	box-shadow: 0 10px 15px;
+  }
+ @media screen and (max-width: 770px){
+ 	.section { 
+ 		padding: 20px;
+ 	 }
+ }
+@media screen and (max-width: 990px){
+	.nav { 
+		width: 100%;
+	 }
+	 .mainpage img {      
+	 	max-width: 100%;
+	  }
+	  .nav a { 
+		margin: auto;
+		max-width: 100%;
+	 }
+}
+
+
+</style>
+</head>
+<body>
+	<div class= "nav">
+	<a href="DEfi.html" target="_self">Home</a>
+	<a href="Services.html"target="_self">Services</a>
+	<a href="About us.html"target="_self">About Us</a>
+	<a href="Contact info.html"target="_self">Contact Info</a>
+</div>
+	<div class="img">
+           	<img src = "img/logo.png " >
+           </div>
+         <div class="header">
+         <h1>DEFI PET SHOP</h1>
+</div>  
+<div class="section">
+		<h2> SERVICES</h2>
+		<div class="container">
+			<div class="box">
+				<img src="img/petgroom.png">
+				<h3>Pet Grooming</h3>
+				<a href="Contact info.html" class="btn">Contact Us</a>
+			</div>
+				<div class="box">
+				<img src="img/petfood.png">
+				<h3>Pet Food and Maintaince</h3>
+				<a href="Contact info.html" class="btn">Contact Us</a>
+			</div>
+				<div class="box">
+				<img src="img/Home Services.png">
+				<h3>Home Services</h3>
+				<a href="Contact info.html" class="btn">Contact Us</a>
+			</div>
+				<div class="box">
+				<img src="img/petaccess.png">
+				<h3>Pet Accessories</h3>
+				<a href="Contact info.html" class="btn">Contact Us</a>
+			</div>
+				<div class="box">
+				<img src="img/doggs.png">
+				<h3>Dog Shooter and Stud Services</h3>
+				<a href="Contact info.html" class="btn">Contact Us</a>
+				</div>
+			</div>
+	</div>
+  
+</body>
+</html>

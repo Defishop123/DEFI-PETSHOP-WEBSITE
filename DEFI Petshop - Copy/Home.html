@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon"  href="pet.png"/>
+	<title>DEFI PET SHOP</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',san serif;
+}
+body {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	letter-spacing: 0.2px;
+	background: url(img/bg.jpg);
+}
+
+
+ nav {
+ 	position: relative;
+ 	display: flex;
+ }
+ nav a {
+ 	position: relative;
+ 	margin: 0 20px;
+ 	font-size: 2em;
+ 	color:#fff;
+ 	text-decoration: none;
+
+ }
+nav #line { 
+	position: absolute;
+	left: 0;
+	height: 4px;
+	width: 0;
+	background: #000;
+	bottom: -8px;
+	transition: 0.2s;
+	border-radius: 4px; 
+  }
+
+
+</style>
+
+</head>
+<body>
+	
+	<nav>
+		<div id="line"></div>
+	<a href="">Home</a>
+	<a href="">Services</a>
+	<a href="">About Us</a>
+	<a href="">Contact Info</a>
+</nav>
+<script type="text/javascript">
+		var line = document.querySelector('#line');
+		var item = document.querySelectorAll('nav a');
+
+		function indicator(e){ 
+			line.style.left = e.offsetLeft+'px';
+			line.style.width = e.offsetWidth+'px';
+		}
+		item.forEach(link => {
+			link.addEventListener('click',(e)=> {
+				 indicator(e.target);
+			})
+		})
+	</script>
+		
+</body>
+</html>

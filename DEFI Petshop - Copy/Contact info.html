@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon"  href="img/pet.png"/>
+	<title>DEFI PET SHOP</title>     
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<script src="Contact info.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_msNY1gPa0lzgVARWoemqW");
+})();
+</script>
+<style>
+* ,
+*before:,
+*after{
+  	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+body { 
+	background: url("img/bg.jpg");
+
+ }
+
+.img img { 
+	width: 10%;
+	position: absolute;
+	top:-2%;
+	left:1%;
+}
+.nav { 
+	position: absolute;
+	margin: 10px 950px;
+	height: 50vh;
+	width: 27vw;
+	display: flex;
+	align-items: right;
+	justify-content: space-around;
+}
+.nav a { 
+  position: relative;
+  color: #fff;
+  text-decoration:none;
+  font-family:'Poppins',sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.2px;;
+}
+.nav a:after {
+	content: "";
+	position: absolute;
+	background-color: #000;
+	height: 3px;
+	width: 0;
+	left:0;
+	bottom:310px;
+	transition: 0.3s;
+}
+.nav a:hover {
+	color: #000;
+}
+.nav a:hover:after{
+	width: 100%;
+}
+.header { 
+  height: 25vh;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.header h1{
+  font-size: 6vw;
+  font-family:kristen ITC;
+  
+}
+
+.contact { 
+	position: relative;
+	min-height: 77vh;
+	padding: 5px 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+ }
+ .contact .content { 
+ 	max-width: 800px;
+ 	text-align: center;
+
+  }
+.contact .content h2{
+	font-size: 50px;
+	font-weight: 700;
+	color:white;
+
+}
+.contact .content p { 
+	font-weight: 400;
+	color:white;
+
+ }
+ .container {
+ 	width: 100%;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	margin-top: 30px;
+ }
+ .container .contactinfo { 
+ 		width: 50%;
+ 		display: flex;
+ 		flex-direction: column;
+ }
+ .container .contactinfo .box { 
+ 		position: relative;
+ 		padding: 1px 0;
+ 		display: flex;
+}
+.container .contactinfo .box .icon { 
+	min-width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+
+ }
+ .container .contactinfo .box .text { 
+ 	display: flex;
+ 	margin-left: 20px;
+ 	font-size: 20px;
+ 	color:white;
+ 	flex-direction: column;
+ 	font-weight: 200;
+  }
+  .container .contactinfo .box .text h3 { 
+   		font-weight: 300;
+   		color:#181D31;
+ }
+.contactForm { 
+	width: 40%;
+	padding: 50px;
+	background: white;
+ }
+.contactForm h2 { 
+	font-size: 30px;
+	color:#000;
+	font-weight: 500;
+}
+.contactForm .inputbox { 
+
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+
+ }
+ .contactForm .inputbox input
+  {
+ 	width: 100%;
+ 	padding: 5px 0;
+ 	font-size: 16px;
+ 	margin:10px 0;
+ 	border:none;
+ 	border-bottom: 2px solid #000;
+ 	outline: none;
+ 	resize: none;
+
+  }
+  .contactForm .inputbox placeholder {
+  	position: absolute;
+  	left:0;
+  	padding: 5px 0;
+ 	font-size: 16px;
+ 	margin:10px 0;
+ 	color: #000;
+ }
+.contactForm .inputbox input:focus ~ placeholder,
+.contactForm .inputbox input:valid ~ placeholder,
+ { 
+
+	font-size: 10px;
+	
+ }
+
+ .contactForm .inputbox button[ onclick="send()"] { 
+ 
+ 	width: 100px;
+ 	background: #17D7A0;
+ 	color: #fff;
+ 	border: none;
+ 	cursor: pointer;
+ 	padding: 10px;
+ }
+
+@media (max-width: 992px)
+{
+	.contact {
+		padding:20px;
+	}
+	.container 
+	{
+		flex-direction: column;
+	}
+	.container .contactinfo 
+	{
+		margin-bottom: 10px;
+	}
+	.container .contactinfo ,
+	.contactForm
+	{
+		width: 100%;
+	}
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+		<div class= "nav">
+	<a href="DEfi.html" target="_self">Home</a>
+	<a href="Services.html"target="_self">Services</a>
+	<a href="About us.html"target="_self">About Us</a>
+	<a href="Contact info.html"target="_self">Contact Info</a>
+</div>
+	<div class="img">
+           	<img src = "img/logo.png " >
+           </div>
+         <div class="header">
+         <h1>DEFI PET SHOP</h1>
+</div>  
+	
+<br>
+</br>
+	<section class ="contact" >
+		<div class = " content" >
+			<h2> Contact Us </h2>
+			<p> For more details </p> 
+</div>
+	 
+		<div class ="container" > 
+			<div class = " contactinfo">
+				<div class = " box ">
+					<div class = " icon " ><i class="fas fa-map-marker" aria-hidden="true"></i>
+</div> 
+					<div class = " text " > 
+						<h3> Address </h3>
+					<p> Tapuac District Dagupan City , Pangasinan </p> 
+	</div>
+</div>
+	<div class = " box " >
+		<div class = " icon "><i class="fas fa-phone-alt"></i></div> 
+			<div class = " text " > 
+			<h3> Phone </h3>
+			<p> 0924-4123-123</p> 
+			<p> 0963-5385-433</p>
+	</div>
+</div>
+		<div class = " box " >
+		<div class = " icon "><i class="fa fa-envelope" aria-hidden="true"></i></div> 
+			<div class = " text " > 
+			<h3> Email </h3>
+			<p> shopdefi035@gmail.com </p> 
+			
+	</div>
+</div>
+</div>
+	
+        <div class="contactForm">
+            <h2>Message</h2>
+        <div class="inputbox" >
+        <input type="text" id="toName"  placeholder="Name">
+        <input type="text" id="email"  placeholder="Email">
+        <input type="text" id="msg" placeholder="Type your Message">
+        <button onclick="send()">Submit</button>
+        </div>
+    </section>
+    </body>
+
+</html>

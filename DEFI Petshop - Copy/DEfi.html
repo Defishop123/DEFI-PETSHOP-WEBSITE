@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon"  href="img/pet.png"/>
+	<title>DEFI PET SHOP</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* , 
+*before:,
+*after{
+  	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+body { 
+	background: url("img/bg.jpg");
+
+ }
+
+.img img { 
+	width: 10%;
+	position: absolute;
+	top:-2%;
+	left:1%;
+}
+.nav { 
+	position: absolute;
+	margin: 10px 950px;
+	height: 50vh;
+	width: 27vw;
+	display: flex;
+	align-items: right;
+	justify-content: space-around;
+}
+.nav a { 
+  position: relative;
+  color: #fff;
+  text-decoration:none;
+  font-family:'Poppins',sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.2px;;
+}
+.nav a:after {
+	content: "";
+	position: absolute;
+	background-color: #000;
+	height: 3px;
+	width: 0;
+	left:0;
+	bottom:310px;
+	transition: 0.3s;
+}
+.nav a:hover {
+	color: #000;
+}
+.nav a:hover:after{
+	width: 100%;
+}
+.header { 
+  height: 25vh;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.header h1{
+  font-size: 6vw;
+  font-family:kristen ITC;
+  
+}
+.mainpage img { 
+   	display: flex;
+	margin-left:auto;
+	margin-right:auto;
+	width: 20%;
+}
+@media screen and (max-width: 700px){
+	.nav { 
+		
+		margin: auto;
+	 }
+	 .mainpage img {      
+	 	max-width: 100%;
+	  }
+}
+@media screen and (max-width: 400px) { 
+	.nav a { 
+		float:100%;
+	
+	 }
+ }
+
+
+	
+</style>
+<body>
+	<div class= "nav">
+	<a href="DEfi.html" target="_self">Home</a>
+	<a href="Services.html"target="_self">Services</a>
+	<a href="About us.html"target="_self">About Us</a>
+	<a href="Contact info.html"target="_self">Contact Info</a>
+</div>
+	<div class="img">
+           	<img src = "img/logo.png " >
+           </div>
+         <div class="header">
+         <h1>DEFI PET SHOP</h1>
+</div>  
+			<div class= "mainpage">
+				<img src = "img/pet.png">
+</body>
+</html>
